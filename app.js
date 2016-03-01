@@ -6,7 +6,6 @@ const natural = require('natural');
 const _ = require('underscore');
 const util = require('util');
 const request = require('request');
-var store = require('data-store')('data');
 
 var tokenizer = new natural.WordTokenizer();
 
@@ -58,3 +57,9 @@ bot.on('botMessage', function(bot, message) {
 });
 
 bot.serve(process.env['PORT'] || 3000);
+
+// start http server
+http.createServer(function (req, res) {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('')
+})
