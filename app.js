@@ -28,7 +28,10 @@ bot.on('botRegistered', function() {
 });
 
 bot.on('botMessage', function(bot, message) {
+
   console.log('incoming');
+  console.log('message');
+
   if (message.name != 'giphybot') {
     var tokens = tokenizer.tokenize(message.text);
 
