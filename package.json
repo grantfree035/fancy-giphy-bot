@@ -16,6 +16,7 @@
     "url": "https://github.com/cmcavoy/giphybot/issues"
   },
   "dependencies": {
+    "data-store": "^0.15.4",
     "fancy-groupme-bot": "git+https://github.com/grantfree035/fancy-groupme-bot.git",
     "giphy-wrapper": "0.0.1",
     "natural": "~0.1.21",

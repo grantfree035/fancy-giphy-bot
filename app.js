@@ -6,6 +6,7 @@ const natural = require('natural');
 const _ = require('underscore');
 const util = require('util');
 const request = require('request');
+var store = require('data-store')('data');
 
 var tokenizer = new natural.WordTokenizer();
 
