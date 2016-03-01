@@ -36,6 +36,7 @@ bot.on('botMessage', function(bot, message) {
     var tokens = tokenizer.tokenize(message.text);
 
     tokens = _.map(tokens, function(t) { return t.toLowerCase(); });
+    console.log(tokens);
 
     if (tokens.indexOf('giphybot') >= 0 || tokens.indexOf('g') >= 0) {
       tokens = _.without(tokens, 'giphybot', 'g');
